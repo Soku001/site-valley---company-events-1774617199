@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley & Company Events | Premium Wedding Planner in Seattle, WA</title>
+    <meta name="description" content="Valley & Company Events is a premium wedding planner serving Seattle, WA. We offer expert planning, free consultations, and online appointments for your perfect day.">
+    <meta name="keywords" content="wedding planner Seattle, Seattle wedding, wedding planning, event planner, premium wedding, luxury wedding, Free Consultation, Online Appointments, Expert Team, Quality Guaranteed, Customer Support">
+    <meta name="author" content="Valley & Company Events">
+
+    <!-- Google Fonts: Inter (headings), Open Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* GLOBAL STYLES */
+        :root {
+            --color-primary: #1a1a2e; /* Dark Blue */
+            --color-accent: #4a90d9; /* Bright Blue */
+            --color-background: #f8f9fa; /* Light Gray/Off-white */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --font-heading: 'Inter', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            margin-top: 0;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-primary);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-text-light);
+            border: 2px solid var(--color-accent);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-accent);
+            color: var(--color-text-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #f0f2f5; /* Light grey for visual separation */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-accent);
+            border-radius: 2px;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        /* NAVIGATION BAR */
+        .navbar {
+            background-color: var(--color-primary);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-text-light);
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+        .navbar-brand i {
+            margin-right: 10px;
+            color: var(--color-accent);
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: var(--color-text-light);
+            font-weight: 600;
+            font-size: 1rem;
+            position: relative;
+            padding-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Nav Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+            justify-content: space-between;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-text-light);
+            transition: all 0.3s ease;
+            border-radius: 1px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background-image: url('https://source.unsplash.com/featured/1600x900/?Wedding,planner,professional');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-text-light);
+            position: relative;
+            padding-top: 80px; /* Offset for fixed navbar */
+            box-sizing: border-box;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.55); /* Darker overlay for text readability */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--color-text-light);
+            font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            line-height: 1.5;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+            font-weight: 400;
+        }
+
+        /* SERVICES SECTION */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-card i {
+            font-size: 3.5rem;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--color-primary);
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            color: #555;
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+
+        .service-card .cta-link {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--color-accent);
+            position: relative;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .service-card .cta-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        .service-card .cta-link:hover::after {
+            width: 100%;
+        }
+
+        /* ABOUT SECTION */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            object-fit: cover;
+            aspect-ratio: 3/2;
+            display: block; /* Remove extra space below image */
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #444;
+            font-size: 1rem;
+        }
+
+        .about-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .about-list li {
+            font-size: 1rem;
+            color: #444;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-list li i {
+            color: var(--color-accent);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* REVIEWS SECTION */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .review-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .review-card .stars {
+            color: #ffc107; /* Gold color for stars */
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .review-card p {
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .review-card .reviewer-info {
+            font-weight: 600;
+            color: var(--color-primary);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .review-card .reviewer-info span {
+            font-weight: 400;
+            font-size: 0.85rem;
+            color: #777;
+            margin-left: 8px;
+        }
+
+        /* NEW FEATURES SECTION */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .feature-item div {
+            flex-grow: 1;
+        }
+
+        .feature-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: var(--color-primary);
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+        .now-available-tag {
+            display: inline-block;
+            background-color: rgba(74, 144, 217, 0.1); /* Light accent background */
+            color: var(--color-accent);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            animation: pulse 1.5s infinite;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* CONTACT SECTION */
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--color-primary);
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1rem;
+            color: #444;
+        }
+        .contact-info p a {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+        .contact-info p a:hover {
+            color: var(--color-accent);
+        }
+
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--color-primary);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--color-primary);
+            font-size: 0.95rem;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-text-dark);
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: var(--color-accent);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.2);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form .btn-primary {
+            width: auto;
+            padding: 14px 30px;
+            margin-top: 10px;
+        }
+
+        .contact-map {
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 400px;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: var(--color-primary);
+            color: var(--color-background);
+            padding: 60px 0 30px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .footer-col {
+            width: calc(33% - 20px);
+            margin-bottom: 30px;
+            min-width: 280px;
+        }
+
+        .footer-col:first-child {
+            width: calc(40% - 20px);
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            position: relative;
+            font-weight: 600;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+
+        .footer-col p, .footer-col ul {
+            margin-bottom: 10px;
+            line-height: 1.8;
+            color: rgba(248, 249, 250, 0.8);
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(248, 249, 250, 0.8);
+            transition: color 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--color-accent);
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(248, 249, 250, 0.1);
+            text-align: center;
+            color: rgba(248, 249, 250, 0.7);
+        }
+        .footer-brand {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text-light);
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            color: rgba(248, 249, 250, 0.8);
+        }
+        .footer-contact-item i {
+            color: var(--color-accent);
+            margin-right: 10px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .footer-contact-item p {
+            margin: 0;
+        }
+        .footer-contact-item a {
+            color: rgba(248, 249, 250, 0.8);
+        }
+        .footer-contact-item a:hover {
+            color: var(--color-accent);
+        }
+
+        /* WHATSAPP FLOATING BUTTON */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background-color: #25d366; /* WhatsApp green */
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+        }
+
+        /* RESPONSIVE DESIGN - Mobile First Approach */
+
+        /* Small devices (phones, 767px and down) */
+        @media (max-width: 767px) {
+            .navbar .container {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .navbar-brand {
+                margin-bottom: 0;
+            }
+            .nav-links {
+                display: none; /* Hide by default on mobile */
+                width: 100%;
+                flex-direction: column;
+                background-color: var(--color-primary);
+                position: absolute;
+                top: 70px; /* Below navbar */
+                left: 0;
+                padding: 15px 0;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                border-top: 1px solid rgba(248, 249, 250, 0.1);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links li {
+                margin: 0;
+                text-align: center;
+            }
+            .nav-links a {
+                display: block;
+                padding: 12px 0;
+            }
+            .nav-links a::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .menu-toggle {
+                display: flex;
+            }
+            .hero {
+                height: auto;
+                min-height: 70vh;
+                padding: 120px 0 60px;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            .lead {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            section {
+                padding: 60px 0;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+            .about-text h2 {
+                font-size: 1.8rem;
+            }
+            .about-list {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-content {
+                flex-direction: column;
+            }
+            .contact-info, .contact-form {
+                padding: 30px;
+            }
+            .contact-info h3, .contact-form h3 {
+                font-size: 1.5rem;
+            }
+            .contact-map {
+                height: 300px;
+            }
+
+            .footer .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-col {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .footer-col:first-child {
+                width: 100%;
+            }
+            .footer-col h4::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .footer-contact-item {
+                justify-content: center;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.8rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        /* Medium devices (tablets, 768px to 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .navbar .container {
+                padding: 0 30px;
+            }
+            .nav-links li {
+                margin-left: 20px;
+            }
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            .hero-content p {
+                font-size: 1.3rem;
+            }
+
+            .services-grid, .reviews-grid, .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+
+            .about-content, .contact-content {
+                gap: 30px;
+            }
+            .about-image, .about-text, .contact-info, .contact-form {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .footer-col {
+                width: calc(33.33% - 20px);
+            }
+            .footer-col:first-child {
+                width: calc(33.33% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="navbar-brand">
+                <i class="fas fa-heart-pulse"></i> Valley & Co. Events
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Your Dream Wedding, Perfectly Orchestrated.</h1>
+            <p>At Valley & Company Events, we craft unforgettable moments for couples in Seattle and beyond. Experience unparalleled service and meticulous planning for your special day.</p>
+            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container text-center">
+            <h2 class="section-title">Our Distinctive Wedding Planning Services</h2>
+            <p class="lead">Experience peace of mind with our dedicated services, ensuring every detail of your wedding is handled with expertise and care.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-ring"></i>
+                    <h3>Wedding planner</h3>
+                    <p>Our comprehensive wedding planning ensures a seamless journey from concept to 'I Do', making your vision a stunning reality.</p>
+                    <a href="#contact" class="cta-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Free Consultation</h3>
+                    <p>Begin your planning journey with a complimentary session to discuss your dreams and how we can bring them to life.</p>
+                    <a href="#contact" class="cta-link">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Online Appointments</h3>
+                    <p>Conveniently schedule and attend planning meetings from anywhere, fitting seamlessly into your busy lifestyle.</p>
+                    <a href="#contact" class="cta-link">Schedule Online</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users-gear"></i>
+                    <h3>Expert Team</h3>
+                    <p>Benefit from a seasoned team of professionals dedicated to impeccable execution and creative solutions for your wedding.</p>
+                    <a href="#about" class="cta-link">Meet Our Team</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Quality Guaranteed</h3>
+                    <p>We commit to the highest standards, ensuring every aspect of your event reflects excellence and flawless execution.</p>
+                    <a href="#reviews" class="cta-link">See Our Reviews</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support</h3>
+                    <p>Receive attentive and prompt support throughout your planning process, ensuring all your questions are answered.</p>
+                    <a href="#contact" class="cta-link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container text-center">
+            <h2 class="section-title">Crafting Unforgettable Seattle Weddings</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/featured/900x600/?Wedding,planner,team" alt="Valley & Company Events Team Planning a Wedding">
+                </div>
+                <div class="about-text text-left">
+                    <p>Valley & Company Events is Seattle's premier wedding planner, passionately dedicated to creating bespoke, breathtaking celebrations. Located at 7003 3rd Ave NW, Seattle, WA, we pride ourselves on a modern, trustworthy, and professional approach to wedding design and execution.</p>
+                    <p>Our commitment is to remove the stress of planning, allowing you to savour every joyous moment. With an expert team at your side, we guarantee a meticulously planned event that reflects your unique love story and exceeds every expectation. We offer a <span class="text-bold">Free Consultation</span> to discuss your vision.</p>
+                    <p>Discover why couples trust us to bring their most cherished day to life, from seamless <span class="text-bold">Online Appointments</span> to unwavering <span class="text-bold">Quality Guaranteed</span>.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Bespoke Wedding Planning</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated Expert Team</li>
+                        <li><i class="fas fa-check-circle"></i> Seamless Online Appointments</li>
+                        <li><i class="fas fa-check-circle"></i> Unwavering Quality Guaranteed</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Schedule Your Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container text-center">
+            <h2 class="section-title">Hear From Our Happy Couples</h2>
+            <p class="lead">Our clients' experiences speak volumes about our dedication to creating perfect wedding days.</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Valley & Company Events made our Seattle wedding a dream come true! Their <span class="text-bold">Wedding planner</span> service was impeccable, handling every detail from vendor coordination to the smallest decor touches. We especially appreciated the <span class="text-bold">Free Consultation</span> – it set the tone for a truly stress-free experience. Highly recommend them for anyone getting married in the Pacific Northwest!"</p>
+                    <div class="reviewer-info">
+                        Sarah & Michael R. <span>— Seattle, WA</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The <span class="text-bold">Expert Team</span> at Valley & Co. was an absolute lifesaver for our wedding. Their professionalism and calm demeanor, even during last-minute changes, was incredible. The <span class="text-bold">Quality Guaranteed</span> truly shone through; everything was perfect. Living in Seattle, their <span class="text-bold">Online Appointments</span> were so convenient for our busy schedules."</p>
+                    <div class="reviewer-info">
+                        Jessica L. <span>— Queen Anne, Seattle</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"From our first call to the final dance, Valley & Company Events provided exceptional <span class="text-bold">Customer Support</span>. They were always responsive and truly listened to our desires. Our wedding was everything we imagined and more. If you're looking for a top-tier wedding planner in Seattle, look no further!"</p>
+                    <div class="reviewer-info">
+                        Emily & David T. <span>— Ballard, Seattle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Features Section -->
+    <section id="features">
+        <div class="container text-center">
+            <h2 class="section-title">Enhancing Your Planning Experience</h2>
+            <span class="now-available-tag">Now Available</span>
+            <p class="lead">We are continuously innovating to provide you with the most advanced and convenient wedding planning tools.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-comments"></i>
+                    <div>
+                        <h4>Live Chat</h4>
+                        <p>Get instant support and answers to your urgent questions, available 24/7 for ultimate convenience.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <h4>Online Booking</h4>
+                        <p>Effortlessly schedule your consultations and appointments directly through our website, no calls needed.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <h4>AI Assistant</h4>
+                        <p>Our intelligent assistant provides quick, accurate answers to common inquiries, whenever you need them.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-phone-volume"></i>
+                    <div>
+                        <h4>AI Voice Agent</h4>
+                        <p>Never miss a call or an important detail; our AI voice agent ensures every query is handled professionally.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp Integration</h4>
+                        <p>Connect with us instantly on WhatsApp for quick replies and seamless communication on the go.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star-half-alt"></i>
+                    <div>
+                        <h4>Live Google Reviews</h4>
+                        <p>See our most recent client feedback updated automatically on our site, demonstrating our ongoing excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container text-center">
+            <h2 class="section-title">Connect With Valley & Company Events</h2>
+            <p class="lead">Ready to plan your unforgettable day? We're here to help you every step of the way.</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>7003 3rd Ave NW, Seattle, WA 98117, United States</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+12067478554">+1 206-747-8554</a></p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:hello@valleyandco.com">hello@valleyandco.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us an Enquiry</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Interested Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="Wedding planner">Wedding planner</option>
+                                <option value="Free Consultation">Free Consultation</option>
+                                <option value="Online Appointments">Online Appointments</option>
+                                <option value="Expert Team">Expert Team</option>
+                                <option value="Quality Guaranteed">Quality Guaranteed</option>
+                                <option value="Customer Support">Customer Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your wedding vision..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.257321689617!2d-122.37059278436446!3d47.68334817913388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901452e8964893%3A0xc3f837943c5b8b6!2s7003%203rd%20Ave%20NW%2C%20Seattle%2C%20WA%2098117%2C%20USA!5e0!3m2!1sen!2suk!4v1678901234567!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of Valley & Company Events"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <span class="footer-brand">Valley & Co. Events</span>
+                <p>Your premium wedding planner in Seattle, dedicated to crafting beautiful, seamless, and unforgettable moments for your special day.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">Wedding planner</a></li>
+                    <li><a href="#services">Free Consultation</a></li>
+                    <li><a href="#services">Online Appointments</a></li>
+                    <li><a href="#services">Expert Team</a></li>
+                    <li><a href="#services">Quality Guaranteed</a></li>
+                    <li><a href="#services">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>7003 3rd Ave NW, Seattle, WA 98117</p>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p><a href="tel:+12067478554">+1 206-747-8554</a></p>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:hello@valleyandco.com">hello@valleyandco.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Valley & Company Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/12067478554" class="whatsapp-float" target="_blank" aria-label="Chat with Valley & Company Events on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for smooth scrolling and mobile nav -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - navbarHeight,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile nav if open
+                        const navLinks = document.querySelector('.nav-links');
+                        const menuToggle = document.querySelector('.menu-toggle');
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            menuToggle.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active'); // Optional: for animating the hamburger icon
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+
+            // Close mobile nav if resized while open (larger than mobile breakpoint)
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 767 && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
